@@ -1,5 +1,9 @@
 # 🧠 AI Customer Persona Generator
 
+🌐 **Live Demo:** https://customer-persona-generator.onrender.com/
+
+> **Note:** This application is hosted on **Render's free tier**. If the application has been inactive for some time, the first request may take **30–60 seconds** to wake up. After that, it responds normally.
+
 An AI-powered web application that generates detailed customer personas using **Google Gemini AI**. This tool helps marketers, startups, and businesses better understand their target audience by creating realistic customer profiles along with behavioral insights and marketing recommendations.
 
 ---
@@ -7,15 +11,16 @@ An AI-powered web application that generates detailed customer personas using **
 ## 🚀 Features
 
 - 🤖 AI-generated customer personas using Google Gemini 2.5 Flash
-- 👤 Customer profile generation
-- 🎯 Personality traits and background
-- 💡 Pain points and challenges
+- 👤 Detailed customer profile generation
+- 🎯 Personality traits and background analysis
+- 💡 Pain points and customer challenges
 - 🛒 Buying behaviour analysis
 - 📱 Preferred marketing platforms
-- 📈 Marketing strategy suggestions
+- 📈 AI-powered marketing strategy recommendations
 - 🛍️ Product recommendations
-- 🎨 Modern responsive UI
+- 🎨 Modern responsive user interface
 - 🔒 Secure API key management using `.env`
+- ☁️ Live deployment on Render
 
 ---
 
@@ -36,7 +41,8 @@ An AI-powered web application that generates detailed customer personas using **
 ### Tools
 - Python Dotenv
 - Git & GitHub
-- Ngrok (for public demo)
+- Render
+- Ngrok (for local public testing)
 
 ---
 
@@ -58,7 +64,8 @@ customer-persona-generator/
 ├── app.py
 ├── requirements.txt
 ├── .gitignore
-└── README.md
+├── README.md
+└── .env
 ```
 
 ---
@@ -97,7 +104,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 5. Install dependencies
+### 5. Install the required packages
 
 ```bash
 pip install -r requirements.txt
@@ -115,7 +122,7 @@ GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 python app.py
 ```
 
-Open your browser and visit
+Open your browser and visit:
 
 ```
 http://127.0.0.1:5000
@@ -125,23 +132,34 @@ http://127.0.0.1:5000
 
 ## 📝 How It Works
 
-1. Enter customer information.
+1. Enter customer information into the form.
 2. Click **Generate AI Persona**.
-3. The application sends the data to the Google Gemini API.
-4. Gemini generates a comprehensive customer persona.
-5. The generated persona is displayed in the dashboard.
+3. The application sends the customer details to the Google Gemini API.
+4. Gemini generates a detailed customer persona with marketing insights.
+5. The generated persona is displayed in a clean and responsive dashboard.
+
+---
+
+## 🌐 Live Demo
+
+Visit the deployed application here:
+
+**https://customer-persona-generator.onrender.com/**
 
 ---
 
 ## 📸 Application Preview
 
-The application contains:
+The application includes:
 
 - Customer Information Form
-- AI Generated Persona Panel
-- Marketing Insights
+- AI-Generated Customer Persona
 - Personality Analysis
+- Customer Background
+- Pain Points
 - Buying Behaviour
+- Preferred Marketing Platforms
+- Marketing Strategy Suggestions
 - Product Recommendations
 
 ---
@@ -151,29 +169,30 @@ The application contains:
 Create a `.env` file in the project root.
 
 ```env
-GOOGLE_API_KEY=YOUR_API_KEY
+GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
-**Do not upload your `.env` file to GitHub.**
+> **Important:** Never upload your `.env` file or API keys to GitHub.
 
 ---
 
 ## 🎯 Future Enhancements
 
-- Export persona as PDF
-- Copy persona to clipboard
-- Persona history
-- Dark/Light mode
-- Multiple persona comparison
-- User authentication
-- Database integration
-- Dashboard analytics
+- 📄 Export persona as PDF
+- 📋 Copy persona to clipboard
+- 🕒 Persona history
+- 🌙 Dark/Light mode
+- 📊 Persona comparison dashboard
+- 👤 User authentication
+- 🗄️ Database integration
+- 📈 Analytics dashboard
+- 🌍 Multi-language support
 
 ---
 
 ## 👨‍💻 Author
 
-Developed as an AI-powered marketing tool using **Flask** and **Google Gemini AI**.
+Developed as an AI-powered customer persona generation tool using **Flask** and **Google Gemini AI**.
 
 ---
 
