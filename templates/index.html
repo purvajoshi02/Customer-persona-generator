@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Customer Persona Generator</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+
+    <div class="left-panel">
+
+        <div class="logo-card">
+
+            <h1>🧠 AI Customer Persona Generator</h1>
+
+            <p>
+                Generate detailed customer personas using Google's Gemini AI.
+                Understand customer behavior, interests, marketing strategies,
+                and buying patterns instantly.
+            </p>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h2>⚡ AI Powered</h2>
+                <p>Google Gemini 2.5 Flash</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>📈 Marketing Ready</h2>
+                <p>Persona + Strategy + Insights</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>🚀 Fast Results</h2>
+                <p>Generated within seconds</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    <div class="form-card">
+
+        <h2>Create Persona</h2>
+
+        <form id="personaForm" method="POST">
+
+            <div class="input-group">
+
+                <label>Customer Name</label>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="John Doe"
+                    required>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+
+                    <label>Age</label>
+
+                    <input
+                        type="number"
+                        name="age"
+                        placeholder="25"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Occupation</label>
+
+                    <input
+                        type="text"
+                        name="occupation"
+                        placeholder="Software Engineer"
+                        required>
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Monthly Income</label>
+
+                <input
+                    type="text"
+                    name="income"
+                    placeholder="$4000"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Interests</label>
+
+                <textarea
+                    name="interests"
+                    rows="3"
+                    placeholder="Technology, Fitness, Gaming..."
+                    required></textarea>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Goals</label>
+
+                <textarea
+                    name="goals"
+                    rows="3"
+                    placeholder="Career Growth, Better Lifestyle..."
+                    required></textarea>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Challenges</label>
+
+                <textarea
+                    name="challenges"
+                    rows="3"
+                    placeholder="Budget, Time Management..."
+                    required></textarea>
+
+            </div>
+
+            <button class="generate-btn" type="submit">
+
+                🚀 Generate AI Persona
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- RESULT -->
+
+    <div class="result-card">
+
+        <div class="result-header">
+
+            <h2>Generated Persona</h2>
+
+        </div>
+
+        <!-- LOADING -->
+
+        <div id="loading" class="loading" style="display:none;">
+
+            <div class="loader"></div>
+
+            <h3>Generating AI Persona...</h3>
+
+            <p>Please wait a few seconds.</p>
+
+        </div>
+
+        <!-- RESULT -->
+
+        <div id="result">
+
+            {% if persona %}
+
+            <div class="persona-output">
+
+                {{ persona | safe }}
+
+            </div>
+
+            {% else %}
+
+            <div class="placeholder">
+
+                <div class="placeholder-icon">
+
+                    🤖
+
+                </div>
+
+                <h2>Your AI Persona will appear here</h2>
+
+                <p>
+
+                    Fill in the customer information and click
+                    <strong>Generate AI Persona</strong>.
+
+                </p>
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JS MUST BE HERE -->
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

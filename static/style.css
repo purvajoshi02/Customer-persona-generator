@@ -1,0 +1,360 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed,#2563eb);
+    min-height:100vh;
+    padding:40px;
+    overflow-x:hidden;
+}
+
+.background{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,rgba(255,255,255,.18),transparent 35%),
+    radial-gradient(circle at bottom right,rgba(255,255,255,.12),transparent 35%);
+    z-index:-1;
+}
+
+.container{
+    max-width:1800px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:280px 420px 1fr;
+    gap:25px;
+    align-items:start;
+}
+
+.logo-card,
+.form-card,
+.result-card,
+.stat-card{
+
+    background:rgba(255,255,255,.14);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    border-radius:22px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+
+}
+
+.logo-card{
+    padding:25px;
+    color:white;
+    margin-bottom:20px;
+}
+
+.logo-card h1{
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+.logo-card p{
+    line-height:1.8;
+    color:#ececec;
+}
+
+.stats{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.stat-card{
+    padding:18px;
+    color:white;
+    transition:.35s;
+}
+
+.stat-card:hover{
+    transform:translateY(-5px);
+}
+
+.stat-card h2{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#f3f3f3;
+}
+
+.form-card{
+    padding:30px;
+    height:fit-content;
+}
+
+.form-card h2{
+    color:white;
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:110px 1fr;
+    gap:15px;
+
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+label{
+
+    color:white;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+input,
+textarea{
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    background:white;
+
+}
+
+input:focus,
+textarea:focus{
+
+    transform:scale(1.02);
+
+    box-shadow:0 0 0 3px rgba(255,255,255,.35);
+
+}
+
+textarea{
+
+    resize:vertical;
+
+}
+
+.generate-btn{
+
+    margin-top:10px;
+
+    width:100%;
+
+    padding:16px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:white;
+
+    color:#4f46e5;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.generate-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+
+.result-card{
+    padding:35px;
+    min-height:90vh;
+    max-height:90vh;
+    overflow-y:auto;
+    color:white;
+}
+
+.result-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.result-header h2{
+
+    font-size:30px;
+
+}
+
+.placeholder{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    height:75vh;
+
+    text-align:center;
+
+}
+
+.placeholder-icon{
+
+    font-size:90px;
+
+    margin-bottom:20px;
+
+}
+
+.placeholder h2{
+
+    margin-bottom:15px;
+
+}
+
+.placeholder p{
+
+    max-width:350px;
+
+    line-height:1.7;
+
+}
+
+.persona-output{
+
+    line-height:1.9;
+
+    color:white;
+
+}
+
+.persona-output h2{
+
+    margin-top:20px;
+
+    margin-bottom:12px;
+
+    color:#fff;
+
+    font-size:28px;
+
+}
+
+.persona-output h3{
+
+    margin-top:25px;
+
+    margin-bottom:12px;
+
+    color:#ffe082;
+
+}
+
+.persona-output p{
+
+    margin-bottom:18px;
+
+}
+
+.persona-output ul{
+
+    margin-left:22px;
+
+    margin-bottom:18px;
+
+}
+
+.persona-output li{
+
+    margin-bottom:10px;
+
+}
+
+.persona-output strong{
+
+    color:#ffe082;
+
+}
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:rgba(255,255,255,.35);
+
+    border-radius:10px;
+
+}
+
+@media(max-width:1200px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+.result-card{
+
+min-height:auto;
+
+}
+
+.row{
+
+grid-template-columns:1fr;
+
+}
+
+.logo-card{
+
+margin-bottom:25px;
+
+}
+
+}
