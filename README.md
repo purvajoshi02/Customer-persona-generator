@@ -1,6 +1,6 @@
 # 🧠 AI Customer Persona Generator
 
-🌐 **Live Demo:** https://customer-persona-generator.onrender.com/
+🌐 **Live Demo:** [https://customer-persona-generator.onrender.com/](https://customer-persona-generator-aszn.onrender.com)
 
 > **Note:** This application is hosted on **Render's free tier**. If the application has been inactive for some time, the first request may take **30–60 seconds** to wake up. After that, it responds normally.
 
