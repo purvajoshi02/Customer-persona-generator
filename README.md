@@ -1,6 +1,16 @@
 # 🧠 AI Customer Persona Generator
 
-🌐 **Live Demo:** [https://customer-persona-generator.onrender.com/](https://customer-persona-generator-aszn.onrender.com)
+## 👥 Team Members
+
+| Name | Role | Email |
+|------|------|-------|
+| **Purva Joshi** | **Team Lead** | jpurva63@gmail.com |
+| **Suraj Kapoor** | Member | suraj08kapoor@gmail.com |
+| **Gaurav Joshi** | Member | gauravrpjoshi1205@gmail.com |
+
+---
+
+🌐 **Live Demo:** https://customer-persona-generator-aszn.onrender.com/
 
 > **Note:** This application is hosted on **Render's free tier**. If the application has been inactive for some time, the first request may take **30–60 seconds** to wake up. After that, it responds normally.
 
@@ -48,7 +58,7 @@ An AI-powered web application that generates detailed customer personas using **
 
 ## 📂 Project Structure
 
-```
+```text
 customer-persona-generator/
 │
 ├── static/
@@ -124,7 +134,7 @@ python app.py
 
 Open your browser and visit:
 
-```
+```text
 http://127.0.0.1:5000
 ```
 
@@ -144,7 +154,7 @@ http://127.0.0.1:5000
 
 Visit the deployed application here:
 
-**https://customer-persona-generator.onrender.com/**
+**https://customer-persona-generator-aszn.onrender.com/**
 
 ---
 
@@ -190,9 +200,15 @@ GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
-Developed as an AI-powered customer persona generation tool using **Flask** and **Google Gemini AI**.
+Developed by:
+
+- **Purva Joshi** (Team Lead)
+- **Suraj Kapoor**
+- **Gaurav Joshi**
+
+as an AI-powered customer persona generation tool using **Flask** and **Google Gemini AI**.
 
 ---
 
