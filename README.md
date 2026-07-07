@@ -75,13 +75,13 @@ customer-persona-generator/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/purvajoshi02/purvajoshi02-customer-persona-generator.git
+git clone https://github.com/purvajoshi02/Customer-persona-generator.git
 ```
 
 ### 2. Navigate to the project
 
 ```bash
-cd purvajoshi02-customer-persona-generator
+cd Customer-persona-generator
 ```
 
 ### 3. Create a virtual environment
