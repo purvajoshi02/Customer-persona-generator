@@ -16,6 +16,9 @@
 
 An AI-powered web application that generates detailed customer personas using **Google Gemini AI**. This tool helps marketers, startups, and businesses better understand their target audience by creating realistic customer profiles along with behavioral insights and marketing recommendations.
 
+🎥 **Video Demo:**  
+https://drive.google.com/file/d/1MK68hG1acyNZYzBoJWJbC37erL0RSWxK/view?usp=drivesdk
+
 ---
 
 ## 🚀 Features
